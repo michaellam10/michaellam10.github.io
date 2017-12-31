@@ -1,0 +1,188 @@
+#navbar {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 110px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(255,255,255,0));
+  display: inline;
+  z-index: 5;
+  transition: 1s;
+
+  #navbar-collapse-button {
+    display: none;
+  }
+
+  &.navbar-post-transition {
+    opacity: 1;
+    transition: opacity 1s ease-out 2s, transform 1s ease-out 1.5s;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  // on window scroll
+  #navbar.scrolled {
+    height: 85px !important;
+    padding-top: 28px;
+    transition: 1s;
+
+    .navbar-logo {
+      top: 31px;
+      transition: top 1s;
+    }
+
+    &.scrolled-hover {
+      transition: background-color 0.45s ease-out;
+      background: rgba(255,255,255,0.95) !important;
+
+      .navbar-logo a, .navbar-link a {
+        color: #666666;
+      }
+    }
+  }
+}
+
+
+// Michael Lam icon
+#navbar .navbar-logo {
+  position: fixed;
+  left: 50px;
+  top: 40px;
+  transition: 1s;
+
+  a {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: rgba(255,255,255,0.95);
+  }
+}
+
+// navbar menu button
+.navbar-toggle-contain {
+  display: none;
+  width: 22px;
+  position: fixed;
+  right: 56px;
+  top: 37px;
+  z-index: 6;
+  transition: 1s;
+  opacity: 1;
+  transition: 1s;
+  outline: none;
+
+  &.collapsed {
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &.scrolled {
+      top: 28px;
+      transition: 0.45s ease-out;
+    }
+  }
+}
+
+.navbar-toggle-contain .navbar-toggle {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: none;
+  background: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: rgba(255,255,255,0.95);
+    transition: 0.25s;
+  }
+
+  .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #navbar {
+    height: 60px;
+    padding-top: 20px;
+    background: rgba(255,255,255,0.95);
+
+    .navbar-logo {
+      top: auto;
+
+      a {
+        color: #666666;
+        // color: #6a7c8f;
+      }
+    }
+  }
+
+  .navbar-toggle-contain {
+    top: 18px;
+
+    .navbar-toggle .icon-bar {
+      // background-color: #6a7c8f;
+      background-color: #666666;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #navbar {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .navbar-logo {
+      left: 30px;
+    }
+
+    #navbar-collapse-button {
+      display: block;
+      opacity: 0;
+
+      &.active {
+        opacity: 1;
+        position: fixed;
+        right: 25px;
+        top: 21px;
+        z-index: 6;
+        width: 24px;
+        height: 24px;
+        transition: opacity 0.45s;
+      }
+    }
+  }
+
+  .navbar-toggle-contain {
+    display: inline;
+    right: 36px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #navbar {
+    .navbar-logo {
+      display: none;
+    }
+  }
+}

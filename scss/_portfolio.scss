@@ -1,0 +1,273 @@
+.portfolio {
+  background-color: rgba(238,242,244,.66);
+}
+
+.portfolio-feature-image {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  max-height: none;
+  overflow: hidden;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    z-index: 0;
+
+    @media screen and (max-aspect-ratio: 1920/1080) {
+      height: 100% !important;
+      min-width: 100vw !important;
+    }
+
+    @media screen and (min-aspect-ratio: 1920/1080) {
+      width: 100% !important;
+    }
+  }
+}
+
+.portfolio-feature-image .portfolio-feature-image-text-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .portfolio-feature-image-text {
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    font-family: 'Raleway';
+    color: #dddddd;
+    max-width: 80%;
+
+    h1 {
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 10px;
+
+
+      @media screen and (max-width: 704px) {
+        line-height: 30px;
+        font-size: 25px;
+        text-align: left;
+        margin-bottom: 25px;
+        border-right: none !important;
+        animation: none !important;
+      }
+
+      @media screen and (max-width: 550px) {
+        font-size: 20px;
+      }
+    }
+
+    h1.typewriter-effect {
+      line-height: 50px;
+      padding-right: 5px;
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation:
+         typing 2s steps(40, end),
+         blink-caret .75s step-end infinite;
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+      }
+
+      @media screen and (max-width: 704px) {
+        line-height: 30px;
+        white-space: normal !important;
+      }
+    }
+  }
+}
+
+.portfolio-header {
+
+  padding-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  p {
+    text-align: center;
+    line-height: 34px;
+    font-size: 20px;
+    font-family: 'ProximaRegular', sans-serif;
+    width: 50%;
+    margin: 0 auto;
+    color: #666666;
+  }
+
+  hr {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  ul {
+  display: block;
+  margin-top: 55px;
+  text-align: center;
+  padding: 0;
+  line-height: 35px;
+
+  li {
+    display: inline;
+    font-family: 'MaisonNeue-Medium', sans-serif;
+    color: #666;
+    transition: 0.2s;
+    border-right: solid 1px #666;
+    padding-right: 18px;
+    padding-left: 15px;
+    text-decoration: underline;
+    text-underline-position: under;
+    white-space: nowrap;
+
+    &:hover {
+      color: #000;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+
+  li:last-child {
+    border-right: 0;
+  }
+
+  @media screen and (max-width: 850px) {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+
+    li:nth-of-type(4) {
+      border-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 450px;
+
+    li:nth-of-type(4) {
+      border-right: solid 1px #666;
+    }
+
+    li:nth-of-type(3) {
+      border-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    margin-top: 30px;
+
+    li {
+      display: block;
+      border-right: 0 !important;
+      font-size: 14px;
+    }
+  }
+}
+
+  @media screen and (max-width: 1250px) {
+    p {
+      width: 85%;
+    }
+
+    hr {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 704px) {
+    padding-top: 50px;
+
+    p {
+      font-size: 18px;
+      width: 90%;
+    }
+
+    hr {
+      margin-top: 40px;
+      width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    p {
+      font-size: 15px;
+      width: 100%;
+    }
+  }
+}
+
+.scroll-downs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -55px;
+  margin: auto;
+  width :34px;
+  height: 55px;
+  transition: 0.2s ease-out;
+  opacity: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.scroll-downs-post-transition {
+    transform: translateY(-110px);
+    transition: 0.4s ease-out;
+    opacity: 1;
+
+    @media screen and (max-width: 1200px) {
+      transform: translateY(110px);
+      transition: 0.2s ease-out;
+    }
+  }
+}
+.mousey {
+  width: 5.5px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 5px;
+  height: 7px;
+  border-radius: 7px;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(17px); opacity: 0;}
+}

@@ -1,0 +1,180 @@
+// Font Smoothing
+html{
+  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'CooperHewitt-Thin';
+  src: url("../fonts/CooperHewitt/CooperHewitt-Thin.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-Thin.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-Thin.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-Thin.svg#CooperHewitt-Thin") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CooperHewitt-Light';
+  src: url("../fonts/CooperHewitt/CooperHewitt-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-Light.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-Light.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-Light.svg#CooperHewitt-Light") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CooperHewitt-Book';
+  src: url("../fonts/CooperHewitt/CooperHewitt-Book.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-Book.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-Book.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-Book.svg#CooperHewitt-Book") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CooperHewitt-Medium';
+  src: url("../fonts/CooperHewitt/CooperHewitt-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-Medium.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-Medium.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-Medium.svg#CooperHewitt-Medium") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CooperHewitt-Semibold';
+  src: url("../fonts/CooperHewitt/CooperHewitt-Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-Semibold.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-Semibold.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-Semibold.svg#CooperHewitt-Semibold") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CooperHewitt-Bold';
+  src: url("../fonts/CooperHewitt/CooperHewitt-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-Bold.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-Bold.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-Bold.svg#CooperHewitt-Bold") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CooperHewitt-Heavy';
+  src: url("../fonts/CooperHewitt/CooperHewitt-HeavyM.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-Heavy.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-Heavy.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-Heavy.svg#CooperHewitt-Heavy") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Bold';
+  src: url('../fonts/MaisonNeue/MaisonNeue-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Book';
+  src: url('../fonts/MaisonNeue/MaisonNeue-Book.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Medium';
+  src: url('../fonts/MaisonNeue/MaisonNeue-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Demi';
+  src: url('../fonts/MaisonNeue/MaisonNeue-Demi.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Light';
+  src: url('../fonts/MaisonNeue/MaisonNeue-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('../fonts/LeagueSpartan/leaguespartan-bold.eot');
+    src: url('../fonts/LeagueSpartan/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/LeagueSpartan/leaguespartan-bold.woff2') format('woff2'),
+         url('../fonts/LeagueSpartan/leaguespartan-bold.woff') format('woff'),
+         url('../fonts/LeagueSpartan/leaguespartan-bold.ttf') format('truetype'),
+         url('../fonts/LeagueSpartan/leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nevis';
+  src: url('../fonts/Nevis/nevis.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Campton-Light';
+  src: url('../fonts/Campton-LightDEMO.otf')  format('opentype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Campton-Bold';
+  src: url('../fonts/Campton-BoldDEMO.otf')  format('opentype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaLight';
+  src: url('../fonts/ProximaNova/ProximaNova-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/ProximaNova/ProximaNova-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ProximaNova/ProximaNova-Light.svg#ProximaLight') format('svg'); /* Legacy iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaRegular';
+  src: url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/ProximaNova/ProximaNova-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ProximaNova/ProximaNova-Regular.svg#ProximaRegular') format('svg'); /* Legacy iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaRegularItalic';
+  src: url('../fonts/ProximaNova/ProximaNova-RegularIt.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/ProximaNova/ProximaNova-RegularIt.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ProximaNova/ProximaNova-RegularIt.svg#ProximaRegularItalic') format('svg'); /* Legacy iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaBold';
+  src: url('../../../fonts/ProximaNova-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../../fonts/ProximaNova-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../../fonts/ProximaNova-Bold.svg#ProximaBold') format('svg'); /* Legacy iOS */
+       font-weight: normal;
+       font-style: normal;
+}

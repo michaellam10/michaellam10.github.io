@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'CooperHewitt-Bold';
+  src: url("../fonts/CooHew-Bold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CooperHewitt-BoldItalic';
+  src: url("../fonts/CooHew-BoldItalic.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CooperHewitt-Italic';
+  src: url("../fonts/CooHew-Italic.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CooperHewitt-Roman';
+  src: url("../fonts/CooHew-Roman.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal; }
