@@ -5,5 +5,5 @@ $(window).on("load", function() {
     $('.loader').addClass('stop-animation');
   }, 1500);
 
-  $('body').removeClass('initial-hide');
+  $('footer').addClass('post-transition');
 });

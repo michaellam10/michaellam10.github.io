@@ -2536,7 +2536,10 @@ footer {
   background-color: #323232;
   margin: 0 auto;
   padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  display: none; }
+  footer.post-transition {
+    display: block; }
   footer p {
     color: #666666;
     font-size: 13px;
