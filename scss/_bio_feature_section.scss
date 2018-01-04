@@ -1,6 +1,6 @@
 .bio-feature-section {
   position: relative;
-  padding: 100px 50px;
+  padding: 100px 30px;
 
   @media screen and (max-width: 760px) {
     padding-top: 50px;
@@ -12,12 +12,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
   &#gallery {
 
-    .bio-feature-photo {
+    .bio-feature-gallery {
 
       img {
         width: calc(100% / 3 - 15px);
@@ -95,7 +94,7 @@
 }
 
 // Graphic Icon Grid
-.bio-feature-text {
+.bio-feature-graphic {
   padding-left: 35px;
   padding-right: 35px;
   opacity: 0;
@@ -113,14 +112,6 @@
     .line-connect-4, .line-connect-5, .line-connect-6 {
       display: block;
     }
-  }
-
-  .feature-header h1 {
-    font-family: 'CooperHewitt-Semibold', sans-serif;
-    font-size: 105px;
-    margin: 0;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
   }
 
   .feature-body {
@@ -161,22 +152,6 @@
         margin-top: 25px;
         margin-bottom: 25px;
 
-        @media screen and (max-width: 760px) {
-          width: 60px;
-          min-width: 60px;
-          height: 60px;
-          min-height: 60px;
-
-          i {
-            font-size: 35px;
-          }
-
-          img {
-            width: 25px;
-            height: 25px;
-          }
-        }
-
         &.post-transition {
           transform: scale(1);
           opacity: 1;
@@ -204,6 +179,22 @@
             transition: 0.5s ease-out 0.5s;
           }
         }
+
+        @media screen and (max-width: 760px) {
+          width: 60px;
+          min-width: 60px;
+          height: 60px;
+          min-height: 60px;
+
+          i {
+            font-size: 35px;
+          }
+
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
       }
 
       p {
@@ -221,6 +212,12 @@
         padding-right: 15px;
         margin-left: -40px;
 
+        &.post-transition {
+          transform: translateX(0);
+          opacity: 1;
+          transition: 1s ease-out 1.7s;
+        }
+
         @media screen and (max-width: 760px) {
           line-height: 25px;
           font-size: 15px;
@@ -231,13 +228,6 @@
         @media screen and (max-width: 550px) {
           font-size: 13.5px;
           line-height: 19px;
-        }
-
-
-        &.post-transition {
-          transform: translateX(0);
-          opacity: 1;
-          transition: 1s ease-out 1.7s;
         }
       }
 

@@ -8,344 +8,336 @@
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
+
     <title>Michael Lam</title>
 
+    <link href="media/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,700,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/personal-website.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,700,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700,900" rel="stylesheet">
-    <link href="media/favicon.ico" rel="icon" type="image/x-icon" />
-
+    <script defer src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/4833c49610.js"></script>
+    <script defer src="js/navbar.js"></script>
+    <script defer src="js/buttons.js"></script>
+    <script defer src="js/portfolio.js"></script>
+    <script defer src="js/loading-page.js"></script>
   </head>
   <body>
+    <header>
+      <div id="navbar">
+        <div class="navbar-logo">
+          <a href="/">Michael Lam</a>
+        </div>
+        <ul class="navbar-ctas">
+          <li class="navbar-link">
+            <a href="/about">Bio</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/portfolio">Portfolio</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/contact">Contact</a>
+          </li>
+          <hr />
+          <li class="navbar-link">
+            <a href="/">Home</a>
+          </li>
+        </ul>
+        <img id="navbar-collapse-button" src="media/svgs/close.svg" alt="Close Button" />
+      </div>
+      <div class="navbar-toggle-contain">
+          <button type="button" class="navbar-toggle">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+      </div>
+    </header>
     <div class="loading-page">
       <div class="pane" id="left-pane"></div>
       <div class="pane" id="right-pane"></div>
       <div class="loader"></div>
     </div>
-    <main>
-      <div class="portfolio">
-        <div class="navbar-toggle-contain">
-            <button type="button" class="navbar-toggle">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div id="navbar">
-          <div class="navbar-logo">
-            <a href="/">Michael Lam</a>
-          </div>
-          <ul class="navbar-ctas">
-            <li class="navbar-link">
-              <a href="/about">Bio</a>
-            </li>
-            <li class="navbar-link">
-              <a href="/portfolio">Portfolio</a>
-            </li>
-            <!-- <li class="navbar-link">
-              <a href="/photography.html">Photography</a>
-            </li> -->
-            <li class="navbar-link">
-              <a href="/contact">Contact</a>
-            </li>
-            <hr />
-            <li class="navbar-link">
-              <a href="/">Home</a>
-            </li>
-          </ul>
-          <img id="navbar-collapse-button" src="media/svgs/close.svg" alt="Close Button" />
-        </div>
-        <div class="portfolio-feature-image">
-          <video src="https://s3.amazonaws.com/michael-lam-personal-website/Coding.mp4" autoPlay playsinline loop></video>
-          <div class="portfolio-feature-image-text-container">
-            <div class="portfolio-feature-image-text">
-              <h1>I like to design and develop websites.</h1>
-              <h1 class="typewriter-effect">You can see some of my work below.</h1>
-            </div>
-          </div>
-          <div class="scroll-downs">
-            <div class="mousey">
-              <div class="scroller"></div>
-            </div>
+    <main class="portfolio">
+      <div class="portfolio-feature-image">
+        <video src="https://s3.amazonaws.com/michael-lam-personal-website/Coding.mp4" autoPlay playsinline loop></video>
+        <div class="portfolio-feature-image-text-container">
+          <div class="portfolio-feature-image-text">
+            <h1>I like to design and develop websites.</h1>
+            <h1 class="typewriter-effect">You can see some of my work below.</h1>
           </div>
         </div>
-        <div class="portfolio-header" id="portfolio-scroll-target">
-          <p>I enjoy front-end development, visual creativity, and digital design. I believe that the best digital experiences are user-centered, visually clean, and functionally intuitive.</p>
-          <hr />
-          <ul>
-            <li id="scroll-ignitetexas">Ignite Texas</li>
-            <li id="scroll-inksaver">Inksaver</li>
-            <li id="scroll-weatherapp">Weather App</li>
-            <li id="scroll-dashboard">Dashboard</li>
-            <li id="scroll-travelportal">Travel Portal</li>
-            <li id="scroll-personalwebsite">Personal Website</li>
-          </ul>
-        </div>
-        <div id="portfolio-container">
-          <div class="project-container" id="ignitetexas">
-
-            <div class="project-feature-description-container">
-              <div class="description-background">
-                <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/IgniteTexasMockup.png" alt="Ignite Texas Design Mockup" />
-              </div>
-              <div class="project-feature-description">
-                <h1 class="feature-title">Ignite Texas</h1>
-                <h2 class="project-category">Front-end Development | Design</h2>
-
-                <div class="description-body">
-                  <div class="description-category">
-                    <h3>Description</h3>
-                    <p>Ignite Texas, established in 2002, is a four-day retreat that connects incoming UT and ACC freshmen and transfer students to Christian community at The University of Texas and throughout Austin. This retreat provides students with friends and community before arriving to campus and also gives them the tools they need to seek spiritual growth during their time in Austin.</p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Contribution</h3>
-                    <p>Designed the look and feel of Ignite Texas's new website and developed a custom design from scratch using Squarespace's Developer Mode. Built in such a way that content can be updated through Squarespace without touching code, while preserving custom design. Took ownership of seeing the new website through from ideation to launch.</p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Technologies</h3>
-                    <p>CSS, Javascript, jQuery, Responsive Design, Squarespace Developer Mode</p>
-                  </div>
-                </div>
-                <a href="https://ignitetexas.org" target="_blank" class="view-website-button">
-                  <p>View Website</p>
-                  <i class="material-icons">trending_flat</i>
-                </a>
-              </div>
-            </div>
-            <div class="project-feature-image">
-              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/IgniteTexasMockup.png" alt="Ignite Texas Design Mockup" />
-              <div class="project-feature-image-title">
-                <h1>Ignite Texas</h1>
-                <h2 class="project-category">Front-end Development | Design</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
-                        <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="project-container" id="inksaver">
-
-            <div class="project-feature-description-container">
-              <div class="description-background">
-                <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/InksaverMockup.png" alt="Inksaver Design Mockup" />
-              </div>
-              <div class="project-feature-description">
-                <h1 class="feature-title">Inksaver</h1>
-                <h2 class="project-category">Front-end Development</h2>
-
-                <div class="description-body">
-                  <div class="description-category">
-                    <h3>Description</h3>
-                    <p>Inksaver is South Africa’s leading online printer cartridge store. They stock a wide variety of printer consumables for virtually every major printer brand, including but not limited to high quality toner cartridges and printer ink.</p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Contribution</h3>
-                    <p>Converted design assets in Zeplin to five high-traffic, responsive webpages. Wrote custom CSS and HTML to target and build off of starter template DOMs. Collaborated with in-house UI designers throughout the development process.</p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Technologies</h3>
-                    <p>HTML, CSS, Bootstrap, Zeplin, Responsive Design</p>
-                  </div>
-                </div>
-                <a href="https://michaellam10.github.io/Inksaver/" target="_blank" class="view-website-button">
-                  <p>View Website</p>
-                  <i class="material-icons">trending_flat</i>
-                </a>
-              </div>
-            </div>
-            <div class="project-feature-image">
-              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/InksaverMockup.png" alt="Inksaver Design Mockup" />
-              <div class="project-feature-image-title">
-                <h1>Inksaver</h1>
-                <h2 class="project-category">Front-end Development</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
-                        <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
-                </svg>
-              </div>
-
-            </div>
-          </div>
-          <div class="project-container" id="weatherapp">
-            <div class="project-feature-description-container">
-              <div class="description-background">
-                <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/Weather+App.png" alt="Weather App Design Mockup" />
-              </div>
-              <div class="project-feature-description">
-                <h1 class="feature-title">Weather App</h1>
-                <h2 class="project-category">Front-end Development &nbsp;| &nbsp;Design</h2>
-
-                <div class="description-body">
-                  <div class="description-category">
-                    <h3>Description</h3>
-                    <p>A responsive weather application that provides weather information for the current day and week at the input location.</p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Contribution</h3>
-                    <p>Designed the look and feel of the application. Built the weather functionality using APIs from Dark Sky and Google's Geolocation.</p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Technologies</h3>
-                    <p>HTML, CSS, Javascript, jQuery, APIs, AJAX</p>
-                  </div>
-                </div>
-                <a href="https://michaellam10.github.io/Desktop-Weather-App/" target="_blank" class="view-website-button">
-                  <p>View Website</p>
-                  <i class="material-icons">trending_flat</i>
-                </a>
-              </div>
-            </div>
-            <div class="project-feature-image">
-              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/Weather+App.png" alt="Weather App Design Mockup" />
-              <div class="project-feature-image-title">
-                <h1>Weather App</h1>
-                <h2 class="project-category">Front-end Development</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
-                        <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="project-container" id="dashboard">
-            <div class="project-feature-description-container">
-              <div class="description-background">
-                <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/DashboardMockup.png" alt="Dashboard Design Mockup" />
-              </div>
-              <div class="project-feature-description">
-                <h1 class="feature-title">Dashboard</h1>
-                <h2 class="project-category">Front-end Development</h2>
-                <div class="description-body">
-                  <div class="description-category">
-                    <h3>Description</h3>
-                    <p>An internal company dashboard that tracks a number of productivity metrics and project management items. The vision and functionality of this dashboard ideally fits within the business of a design agency.</p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Contribution</h3>
-                    <p>Converted design assets in Zeplin into functional, responsive webpages. Built from the ground up using HTML, CSS, and Javascript. Collaborated with Lead UI Designer throughout the development process.</p>
-                    <br>
-                    <p><i>Note: This project is a work in progress, therefore it is not finished yet.</i></p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Technologies</h3>
-                    <p>HTML, CSS, Javascript, jQuery, Bootstrap 4.0, Zeplin, Responsive Design</p>
-                  </div>
-                </div>
-                <a href="https://michaellam10.github.io/Dashboard/clients.html" target="_blank" class="view-website-button">
-                  <p>View Website</p>
-                  <i class="material-icons">trending_flat</i>
-                </a>
-              </div>
-            </div>
-            <div class="project-feature-image">
-              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/DashboardMockup.png" alt="Dashboard Design Mockup" />
-              <div class="project-feature-image-title">
-                <h1>Dashboard</h1>
-                <h2 class="project-category">Front-end Development</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
-                        <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="project-container" id="travelportal">
-
-            <div class="project-feature-description-container">
-              <div class="description-background">
-                <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/TravelPortalMockup.png" alt="Travel Portal Design Mockup" />
-              </div>
-              <div class="project-feature-description">
-                <h1 class="feature-title">Travel Portal</h1>
-                <h2 class="project-category">Front-end Development | Design</h2>
-
-                <div class="description-body">
-                  <div class="description-category">
-                    <h3>Description</h3>
-                    <p>A responsive travel application that provides the user with photos, live weather information, a searchable map, and local activities and restaurants based on the searched destination. A one-stop resource for aggregating relevant information pertaining to travel destinations.</p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Contribution</h3>
-                    <p>Developed with ReactJS, using APIs from Yelp, Google, Unsplash, Dark Sky, and Giphy. Designed the look and feel of the application.</p>
-                    <br>
-                    <p><i>Note: Yelp's Fusion API only supports <a href="https://www.yelp.com/developers/documentation/v3/supported_locales" target="_blank">these regions</a>, therefore locations outside of those supported will not include local activities and restaurants.</i></p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Technologies</h3>
-                    <p>HTML, CSS, Responsive Design, ReactJS</p>
-                  </div>
-                </div>
-                <a href="http://travel-portal.netlify.com" target="_blank" class="view-website-button">
-                  <p>View Website</p>
-                  <i class="material-icons">trending_flat</i>
-                </a>
-              </div>
-            </div>
-            <div class="project-feature-image">
-              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/TravelPortalMockup.png" alt="Travel Portal Design Mockup" />
-              <div class="project-feature-image-title">
-                <h1>Travel Portal</h1>
-                <h2 class="project-category">Front-end Development | Design</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
-                        <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="project-container" id="personalwebsite">
-
-            <div class="project-feature-description-container">
-              <div class="description-background">
-                <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/PersonalWebsiteMockup.png" alt="Personal Website Design Mockup" />
-              </div>
-              <div class="project-feature-description">
-                <h1 class="feature-title">Personal Website</h1>
-                <h2 class="project-category">Front-end Development &nbsp;| &nbsp;Design</h2>
-
-                <div class="description-body">
-                  <div class="description-category">
-                    <h3>Description</h3>
-                    <p>A personal portfolio website aimed at expressing myself through design and creativity as well as showcasing various web development projects I've worked on.</p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Contribution</h3>
-                    <p>Built using only custom HTML, CSS, and Javascript. Intentionally stayed away from using any Bootstrap elements or third-party plugins.</p>
-                  </div>
-                  <div class="description-category">
-                    <h3>Technologies</h3>
-                    <p>HTML, CSS, Javascript, jQuery, Responsive Design</p>
-                  </div>
-                </div>
-                <a href="/" target="_blank" class="view-website-button">
-                  <p>View Website</p>
-                  <i class="material-icons">trending_flat</i>
-                </a>
-              </div>
-            </div>
-            <div class="project-feature-image">
-              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/PersonalWebsiteMockup.png" alt="Personal Website Design Mockup" />
-              <div class="project-feature-image-title">
-                <h1>Personal Website</h1>
-                <h2 class="project-category">Front-end Development</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
-                        <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
-                </svg>
-              </div>
-            </div>
+        <div class="scroll-downs">
+          <div class="mousey">
+            <div class="scroller"></div>
           </div>
         </div>
       </div>
+      <section class="portfolio-header" id="portfolio-scroll-target">
+        <p>I enjoy front-end development, visual creativity, and digital design. I believe that the best digital experiences are user-centered, visually clean, and functionally intuitive.</p>
+        <hr />
+        <ul>
+          <li id="scroll-ignitetexas">Ignite Texas</li>
+          <li id="scroll-inksaver">Inksaver</li>
+          <li id="scroll-weatherapp">Weather App</li>
+          <li id="scroll-dashboard">Dashboard</li>
+          <li id="scroll-travelportal">Travel Portal</li>
+          <li id="scroll-personalwebsite">Personal Website</li>
+        </ul>
+      </section>
+      <section id="portfolio-container">
+        <div class="project-container" id="ignitetexas">
+          <div class="project-feature-description-container">
+            <div class="description-background">
+              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/IgniteTexasMockup.png" alt="Ignite Texas Design Mockup" />
+            </div>
+            <div class="project-feature-description">
+              <h1 class="feature-title">Ignite Texas</h1>
+              <h2 class="project-category">Front-end Development | Design</h2>
+
+              <div class="description-body">
+                <div class="description-category">
+                  <h3>Description</h3>
+                  <p>Ignite Texas, established in 2002, is a four-day retreat that connects incoming UT and ACC freshmen and transfer students to Christian community at The University of Texas and throughout Austin. This retreat provides students with friends and community before arriving to campus and also gives them the tools they need to seek spiritual growth during their time in Austin.</p>
+                </div>
+                <div class="description-category">
+                  <h3>Contribution</h3>
+                  <p>Designed the look and feel of Ignite Texas's new website and developed a custom design from scratch using Squarespace's Developer Mode. Built in such a way that content can be updated through Squarespace without touching code, while preserving custom design. Took ownership of seeing the new website through from ideation to launch.</p>
+                </div>
+                <div class="description-category">
+                  <h3>Technologies</h3>
+                  <p>CSS, Javascript, jQuery, Responsive Design, Squarespace Developer Mode</p>
+                </div>
+              </div>
+              <a href="https://ignitetexas.org" target="_blank" class="view-website-button">
+                <p>View Website</p>
+                <i class="material-icons">trending_flat</i>
+              </a>
+            </div>
+          </div>
+          <div class="project-feature-image">
+            <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/IgniteTexasMockup.png" alt="Ignite Texas Design Mockup" />
+            <div class="project-feature-image-title">
+              <h1>Ignite Texas</h1>
+              <h2 class="project-category">Front-end Development | Design</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
+                      <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-container" id="inksaver">
+
+          <div class="project-feature-description-container">
+            <div class="description-background">
+              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/InksaverMockup.png" alt="Inksaver Design Mockup" />
+            </div>
+            <div class="project-feature-description">
+              <h1 class="feature-title">Inksaver</h1>
+              <h2 class="project-category">Front-end Development</h2>
+
+              <div class="description-body">
+                <div class="description-category">
+                  <h3>Description</h3>
+                  <p>Inksaver is South Africa’s leading online printer cartridge store. They stock a wide variety of printer consumables for virtually every major printer brand, including but not limited to high quality toner cartridges and printer ink.</p>
+                </div>
+                <div class="description-category">
+                  <h3>Contribution</h3>
+                  <p>Converted design assets in Zeplin to five high-traffic, responsive webpages. Wrote custom CSS and HTML to target and build off of starter template DOMs. Collaborated with in-house UI designers throughout the development process.</p>
+                </div>
+                <div class="description-category">
+                  <h3>Technologies</h3>
+                  <p>HTML, CSS, Bootstrap, Zeplin, Responsive Design</p>
+                </div>
+              </div>
+              <a href="https://michaellam10.github.io/Inksaver/" target="_blank" class="view-website-button">
+                <p>View Website</p>
+                <i class="material-icons">trending_flat</i>
+              </a>
+            </div>
+          </div>
+          <div class="project-feature-image">
+            <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/InksaverMockup.png" alt="Inksaver Design Mockup" />
+            <div class="project-feature-image-title">
+              <h1>Inksaver</h1>
+              <h2 class="project-category">Front-end Development</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
+                      <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <div class="project-container" id="weatherapp">
+          <div class="project-feature-description-container">
+            <div class="description-background">
+              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/Weather+App.png" alt="Weather App Design Mockup" />
+            </div>
+            <div class="project-feature-description">
+              <h1 class="feature-title">Weather App</h1>
+              <h2 class="project-category">Front-end Development &nbsp;| &nbsp;Design</h2>
+
+              <div class="description-body">
+                <div class="description-category">
+                  <h3>Description</h3>
+                  <p>A responsive weather application that provides weather information for the current day and week at the input location.</p>
+                </div>
+                <div class="description-category">
+                  <h3>Contribution</h3>
+                  <p>Designed the look and feel of the application. Built the weather functionality using APIs from Dark Sky and Google's Geolocation.</p>
+                </div>
+                <div class="description-category">
+                  <h3>Technologies</h3>
+                  <p>HTML, CSS, Javascript, jQuery, APIs, AJAX</p>
+                </div>
+              </div>
+              <a href="https://michaellam10.github.io/Desktop-Weather-App/" target="_blank" class="view-website-button">
+                <p>View Website</p>
+                <i class="material-icons">trending_flat</i>
+              </a>
+            </div>
+          </div>
+          <div class="project-feature-image">
+            <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/Weather+App.png" alt="Weather App Design Mockup" />
+            <div class="project-feature-image-title">
+              <h1>Weather App</h1>
+              <h2 class="project-category">Front-end Development</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
+                      <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-container" id="dashboard">
+          <div class="project-feature-description-container">
+            <div class="description-background">
+              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/DashboardMockup.png" alt="Dashboard Design Mockup" />
+            </div>
+            <div class="project-feature-description">
+              <h1 class="feature-title">Dashboard</h1>
+              <h2 class="project-category">Front-end Development</h2>
+              <div class="description-body">
+                <div class="description-category">
+                  <h3>Description</h3>
+                  <p>An internal company dashboard that tracks a number of productivity metrics and project management items. The vision and functionality of this dashboard ideally fits within the business of a design agency.</p>
+                </div>
+                <div class="description-category">
+                  <h3>Contribution</h3>
+                  <p>Converted design assets in Zeplin into functional, responsive webpages. Built from the ground up using HTML, CSS, and Javascript. Collaborated with Lead UI Designer throughout the development process.</p>
+                  <br>
+                  <p><i>Note: This project is a work in progress, therefore it is not finished yet.</i></p>
+                </div>
+                <div class="description-category">
+                  <h3>Technologies</h3>
+                  <p>HTML, CSS, Javascript, jQuery, Bootstrap 4.0, Zeplin, Responsive Design</p>
+                </div>
+              </div>
+              <a href="https://michaellam10.github.io/Dashboard/clients.html" target="_blank" class="view-website-button">
+                <p>View Website</p>
+                <i class="material-icons">trending_flat</i>
+              </a>
+            </div>
+          </div>
+          <div class="project-feature-image">
+            <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/DashboardMockup.png" alt="Dashboard Design Mockup" />
+            <div class="project-feature-image-title">
+              <h1>Dashboard</h1>
+              <h2 class="project-category">Front-end Development</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
+                      <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-container" id="travelportal">
+
+          <div class="project-feature-description-container">
+            <div class="description-background">
+              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/TravelPortalMockup.png" alt="Travel Portal Design Mockup" />
+            </div>
+            <div class="project-feature-description">
+              <h1 class="feature-title">Travel Portal</h1>
+              <h2 class="project-category">Front-end Development | Design</h2>
+
+              <div class="description-body">
+                <div class="description-category">
+                  <h3>Description</h3>
+                  <p>A responsive travel application that provides the user with photos, live weather information, a searchable map, and local activities and restaurants based on the searched destination. A one-stop resource for aggregating relevant information pertaining to travel destinations.</p>
+                </div>
+                <div class="description-category">
+                  <h3>Contribution</h3>
+                  <p>Developed with ReactJS, using APIs from Yelp, Google, Unsplash, Dark Sky, and Giphy. Designed the look and feel of the application.</p>
+                  <br>
+                  <p><i>Note: Yelp's Fusion API only supports <a href="https://www.yelp.com/developers/documentation/v3/supported_locales" target="_blank">these regions</a>, therefore locations outside of those supported will not include local activities and restaurants.</i></p>
+                </div>
+                <div class="description-category">
+                  <h3>Technologies</h3>
+                  <p>HTML, CSS, Responsive Design, ReactJS</p>
+                </div>
+              </div>
+              <a href="http://travel-portal.netlify.com" target="_blank" class="view-website-button">
+                <p>View Website</p>
+                <i class="material-icons">trending_flat</i>
+              </a>
+            </div>
+          </div>
+          <div class="project-feature-image">
+            <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/TravelPortalMockup.png" alt="Travel Portal Design Mockup" />
+            <div class="project-feature-image-title">
+              <h1>Travel Portal</h1>
+              <h2 class="project-category">Front-end Development | Design</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
+                      <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="project-container" id="personalwebsite">
+
+          <div class="project-feature-description-container">
+            <div class="description-background">
+              <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/PersonalWebsiteMockup.png" alt="Personal Website Design Mockup" />
+            </div>
+            <div class="project-feature-description">
+              <h1 class="feature-title">Personal Website</h1>
+              <h2 class="project-category">Front-end Development &nbsp;| &nbsp;Design</h2>
+
+              <div class="description-body">
+                <div class="description-category">
+                  <h3>Description</h3>
+                  <p>A personal portfolio website aimed at expressing myself through design and creativity as well as showcasing various web development projects I've worked on.</p>
+                </div>
+                <div class="description-category">
+                  <h3>Contribution</h3>
+                  <p>Built using only custom HTML, CSS, and Javascript. Intentionally stayed away from using any Bootstrap elements or third-party plugins.</p>
+                </div>
+                <div class="description-category">
+                  <h3>Technologies</h3>
+                  <p>HTML, CSS, Javascript, jQuery, Responsive Design</p>
+                </div>
+              </div>
+              <a href="/" target="_blank" class="view-website-button">
+                <p>View Website</p>
+                <i class="material-icons">trending_flat</i>
+              </a>
+            </div>
+          </div>
+          <div class="project-feature-image">
+            <img src="https://s3.amazonaws.com/michael-lam-personal-website/project+feature+images/PersonalWebsiteMockup.png" alt="Personal Website Design Mockup" />
+            <div class="project-feature-image-title">
+              <h1>Personal Website</h1>
+              <h2 class="project-category">Front-end Development</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24">
+                      <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M13.08 23L2 11.92 12.748 1.172"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <p>Copyright &copy; 2018 Michael Lam | All Rights Reserved</p>
     </footer>
-
-
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/4833c49610.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/buttons.js"></script>
-    <script src="js/portfolio.js"></script>
-    <script src="js/loading-page.js"></script>
   </body>
 </html>

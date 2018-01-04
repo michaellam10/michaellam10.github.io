@@ -5,15 +5,15 @@
 // ==========================================================================
 // Import Base Template Styles
 // ==========================================================================
-@import 'index';
+
+@import 'base';
 
 // ==========================================================================
 // Dashboard Custom Layout
 // ==========================================================================
 
 @import 'loading-page';
-
-@import 'landing';
+@import 'index';
 
 @import 'navbar';
 @import 'navbar_ctas';
@@ -24,8 +24,6 @@
 
 @import 'bio_content_section';
 @import 'bio_feature_section';
-
-@import 'photography';
 
 @import 'portfolio';
 @import 'portfolio_grid';

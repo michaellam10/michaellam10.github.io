@@ -60,15 +60,15 @@ function onScroll(){
 }
 
 function transitionHeader() {
-  $('.bio-photo').toggleClass('bio-photo-post-transition');
-  $('.bio-name').toggleClass('bio-name-post-transition');
+  $('.bio-header-photo').toggleClass('bio-header-photo-post-transition');
+  $('.bio-header-name').toggleClass('bio-header-name-post-transition');
   $('#bio-first-name').toggleClass('first-name-post-transition');
   $('#bio-last-name').toggleClass('last-name-post-transition');
   $('.bio-header-description').toggleClass('bio-header-description-post-transition');
 }
 
 function transitionGraphic() {
-  $('#bio-graphic').find('.bio-feature-text').addClass('scrolled');
+  $('#bio-graphic').find('.bio-feature-graphic').addClass('scrolled');
   $('#bio-graphic').find('p').addClass('post-transition');
   $('#bio-graphic').find('.fact-icon-container').addClass('post-transition');
   $('#bio-graphic').find('.fact-icon-container').find('i, img').addClass('post-transition');
