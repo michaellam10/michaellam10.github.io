@@ -128,12 +128,15 @@
     padding-top: 20px;
     background: rgba(255,255,255,0.95);
 
+    &.navbar-post-transition {
+      transition: 0s;
+    }
+
     .navbar-logo {
       top: auto;
 
       a {
         color: #666666;
-        // color: #6a7c8f;
       }
     }
   }
