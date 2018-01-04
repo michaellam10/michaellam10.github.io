@@ -4,15 +4,15 @@ body {
   font-family: sans-serif;
   box-sizing: border-box;
 
-  main {
-    display: block;
-    opacity: 1;
-    transform: opacity: 1s ease-out 1s;
-
-    &.initial-hide {
-      opacity: 0;
-    }
-  }
+  // main {
+  //   display: block;
+  //   opacity: 1;
+  //   transform: opacity: 1s ease-out 1s;
+  //
+  //   &.initial-hide {
+  //     opacity: 0;
+  //   }
+  // }
 }
 
 a {

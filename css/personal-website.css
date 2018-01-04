@@ -163,10 +163,6 @@ body {
   font-family: sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  body main {
-    display: block; }
-    body main.initial-hide {
-      display: none; }
 
 a {
   text-decoration: none; }
@@ -260,32 +256,6 @@ a {
   width: 100vw;
   height: calc(100vh + 50px);
   overflow: hidden; }
-  .landing-background-video #navbar {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(255, 255, 255, 0))) !important;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0)) !important;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0)) !important;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0)) !important;
-    height: 110px; }
-    .landing-background-video #navbar .navbar-logo {
-      display: block !important;
-      top: 40px; }
-      .landing-background-video #navbar .navbar-logo a {
-        color: rgba(255, 255, 255, 0.95); }
-    @media screen and (max-width: 1000px) {
-      .landing-background-video #navbar {
-        height: 85px; }
-        .landing-background-video #navbar .navbar-logo {
-          top: 30px; } }
-    .landing-background-video #navbar .navbar-ctas {
-      top: 38px; }
-      .landing-background-video #navbar .navbar-ctas .navbar-link a {
-        color: rgba(255, 255, 255, 0.95); }
-    .landing-background-video #navbar #navbar-collapse-button {
-      top: 29px !important; }
-  .landing-background-video .navbar-toggle-contain {
-    top: 26px; }
-    .landing-background-video .navbar-toggle-contain .navbar-toggle .icon-bar {
-      background-color: rgba(255, 255, 255, 0.95); }
 
 .landing-background-video > video {
   display: block;
