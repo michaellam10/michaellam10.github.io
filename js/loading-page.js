@@ -3,5 +3,7 @@ $(window).on("load", function() {
 
   setTimeout(function() {
     $('.loader').addClass('stop-animation');
-  }, 1500)
+  }, 1500);
+
+  $('body').removeClass('initial-hide');
 });
