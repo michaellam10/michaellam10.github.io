@@ -1,17 +1,5 @@
-$(document).ready(function () {
+$(window).on("load", function () {
   $('#navbar').toggleClass('navbar-post-transition');
-
-  $('.navbar-toggle').click(function () {
-    $('.navbar-ctas').toggleClass('active');
-    $('#navbar-collapse-button').toggleClass('active');
-    $(this).parents('.navbar-toggle-contain').toggleClass('collapsed');
-  });
-
-  $('#navbar-collapse-button').click(function() {
-    $('.navbar-ctas').toggleClass('active');
-    $(this).toggleClass('active');
-    $(this).parents().siblings('.navbar-toggle-contain').toggleClass('collapsed');
-  });
 });
 
 $(window).scroll(function() {
@@ -22,6 +10,18 @@ $(window).resize(function() {
   $('.navbar-ctas').removeClass('active');
   $('#navbar-collapse-button').removeClass('active');
   $('.navbar-toggle-contain').removeClass('collapsed');
+});
+
+$('.navbar-toggle').click(function () {
+  $('.navbar-ctas').toggleClass('active');
+  $('#navbar-collapse-button').toggleClass('active');
+  $(this).parents('.navbar-toggle-contain').toggleClass('collapsed');
+});
+
+$('#navbar-collapse-button').click(function() {
+  $('.navbar-ctas').toggleClass('active');
+  $(this).toggleClass('active');
+  $(this).parents().siblings('.navbar-toggle-contain').toggleClass('collapsed');
 });
 
 // —————————————————————  Function Definitions  ————————————————————————————————— //

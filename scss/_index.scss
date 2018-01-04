@@ -6,9 +6,11 @@ body {
 
   main {
     display: block;
+    opacity: 1;
+    transform: opacity: 1s ease-out 1s;
 
     &.initial-hide {
-      display: none;
+      opacity: 0;
     }
   }
 }
