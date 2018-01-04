@@ -8,11 +8,9 @@ $(document).ready(function() {
 $(window).scroll(function() {
   if($(window).scrollTop() > 0) {
     $('.scroll-downs').removeClass('scroll-downs-post-transition');
-    // $('#scroll-down-text').addClass('hidden');
   }
   else {
     $('.scroll-downs').addClass('scroll-downs-post-transition');
-    // $('#scroll-down-text').removeClass('hidden');
   }
 });
 

@@ -1,5 +1,7 @@
 $(window).on("load", function() {
-  transitionHeader();
+  setTimeout(function() {
+    transitionHeader();
+  }, 1500);
 });
 
 const mq = window.matchMedia( "(min-width: 1280px)" );

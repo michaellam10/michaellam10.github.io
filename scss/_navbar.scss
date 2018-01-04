@@ -13,6 +13,7 @@
   display: inline;
   z-index: 5;
   transition: 1s;
+  opacity: 0;
 
   #navbar-collapse-button {
     display: none;
@@ -20,12 +21,12 @@
 
   &.navbar-post-transition {
     opacity: 1;
-    transition: opacity 1s ease-out 2s, transform 1s ease-out 1.5s;
+    transition: opacity 1s ease-out 2s;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  // on window scroll
+
   #navbar.scrolled {
     height: 85px !important;
     padding-top: 28px;

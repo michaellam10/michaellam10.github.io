@@ -20,7 +20,11 @@
     margin-bottom: 30px;
     height: 100%;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 1350px) {
+      margin-bottom: 5px;
+    }
+
+    @media screen and (max-width: 750px) {
       margin-bottom: 15px;
     }
 
@@ -381,10 +385,10 @@
 
       &.selected {
         height: auto !important;
+        min-height: 100vh !important;
         opacity: 1;
         transition: 0.45s;
         visibility: visible;
-        // transform: translateY(-100%);
       }
     }
   }
@@ -404,7 +408,7 @@
   }
 }
 
-@media screen and (max-width: 850px) and (min-width: 750px), (max-width: 550px) {
+@media screen and (max-width: 850px) and (min-width: 751px), (max-width: 550px) {
   #portfolio-container .project-container {
     .project-feature-image {
 
