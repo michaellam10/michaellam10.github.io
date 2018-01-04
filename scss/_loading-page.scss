@@ -37,8 +37,8 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  margin-top: -60px;
-  margin-left: -60px;
+  margin-top: -76px;
+  margin-left: -76px;
   transform: translate(-50%, -50%);
   z-index: 1000;
   border: 16px solid #f3f3f3;
@@ -58,6 +58,13 @@
   &.stop-animation {
     animation-play-state: paused;
     z-index: -1;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 100px;
+    height: 100px;
+    margin-top: -66px;
+    margin-left: -66px;
   }
 }
 

@@ -203,8 +203,8 @@ a {
   position: fixed;
   left: 50%;
   top: 50%;
-  margin-top: -60px;
-  margin-left: -60px;
+  margin-top: -76px;
+  margin-left: -76px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -227,6 +227,12 @@ a {
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
     z-index: -1; }
+  @media screen and (max-width: 550px) {
+    .loader {
+      width: 100px;
+      height: 100px;
+      margin-top: -66px;
+      margin-left: -66px; } }
 
 /* Safari */
 @-webkit-keyframes spin {
