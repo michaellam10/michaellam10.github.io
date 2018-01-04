@@ -163,6 +163,10 @@ body {
   font-family: sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  body main {
+    display: block; }
+    body main.initial-hide {
+      display: none; }
 
 a {
   text-decoration: none; }
