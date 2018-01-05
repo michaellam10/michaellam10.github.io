@@ -2,15 +2,11 @@
 
   &#aboutme {
     .content-section {
-      padding-top: 75px;
-      padding-left: 50px;
-      padding-right: 50px;
+      display: block;
+      padding: 75px 50px;
 
       @media screen and (max-width: 1250px) {
-        flex-direction: column-reverse;
-        padding-left: 110px;
-        padding-right: 110px;
-        padding-top: 60px;
+        padding: 60px 100px;
       }
 
       @media screen and (max-width: 1000px) {
@@ -39,8 +35,29 @@
 
     .section-header {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       flex-direction: column;
+      margin-right: 10%;
+      margin-bottom: 50px;
+
+      @media screen and (max-width: 1250px) {
+        align-items: flex-start;
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        margin-left: 7%;
+      }
+
+      @media screen and (max-width: 750px) {
+        align-items: center;
+        margin-left: 0;
+      }
+
+      @media screen and (max-width: 550px) {
+        display: none;
+      }
 
         .section-title {
           display: flex;
@@ -51,10 +68,6 @@
 
           @media screen and (max-width: 1250px) {
             margin-right: 0;
-          }
-
-          @media screen and (max-width: 550px) {
-            display: none;
           }
 
           &.about-title-post-transition {
@@ -107,6 +120,9 @@
             line-height: 1;
             background-color: #F4F6F8;
 
+            @media screen and (max-width: 1000px) {
+              font-size: 55px;
+            }
 
             @media screen and (max-width: 700px) {
               font-size: 40px;
@@ -140,6 +156,16 @@
               }
             }
 
+            @media screen and (max-width: 1000px) {
+              &#about-title-left {
+                margin-right: 8px;
+              }
+
+              &#about-title-right {
+                margin-left: 8px;
+              }
+            }
+
             @media screen and (max-width: 550px) {
               font-size: 30px;
               font-family: 'CooperHewitt-Medium', sans-serif;
@@ -155,35 +181,44 @@
             }
           }
         }
+    }
+
+    .section-content {
+      padding: 20px;
+      padding-top: 0;
+      opacity: 0;
+      transform: translateX(-50px);
+
+      @media screen and (max-width: 1250px) {
+        padding: 0;
+      }
 
       .section-photo {
         position: relative;
-        margin-top: 40px;
-        margin-bottom: 70px;
         margin-left: 50px;
+        margin-bottom: 25px;
         opacity: 0;
         float: right;
 
-        @media screen and (max-width: 1250px) {
+        @media screen and (max-width: 750px) {
           margin-left: 0;
           margin-bottom: 50px;
         }
 
         @media screen and (max-width: 550px) {
-          // margin-top: 30px;
           margin-top: 0;
           margin-bottom: 40px;
         }
 
         img {
-          width: 40vw;
+          width: 35vw;
           box-shadow: -4px 5px 5px 2px #ccc;
 
-          @media screen and (max-width: 1400px) {
-            width: 30vw;
-          }
+          // @media screen and (max-width: 1400px) {
+          //   width: 30vw;
+          // }
 
-          @media screen and (max-width: 1250px) {
+          @media screen and (max-width: 750px) {
             width: 100%;
           }
         }
@@ -193,23 +228,16 @@
           transition: opacity 2s ease 1.7s;
         }
       }
-    }
-
-    .section-content {
-      padding: 20px;
-      padding-top: 8%;
-      opacity: 0;
-      transform: translateX(-50px);
-
-      @media screen and (max-width: 1250px) {
-        padding: 0;
-      }
 
       h2 {
         font-size: 40px;
         margin-top: 0;
         margin-bottom: 10px;
         font-family: 'CooperHewitt-Semibold', sans-serif;
+
+        @media screen and (max-width: 1250px) and (min-width: 751px) {
+          display: none;
+        }
 
         @media screen and (max-width: 550px) {
           font-size: 20px;
@@ -224,6 +252,12 @@
 
         &:first-of-type {
           margin-top: 0;
+
+          @media screen and (max-width: 1250px) and (min-width: 751px) {
+            &:before {
+              content: 'Hello there! ';
+            }
+          }
         }
 
         &:last-of-type {
