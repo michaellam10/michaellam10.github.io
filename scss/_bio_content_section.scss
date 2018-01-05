@@ -1,4 +1,4 @@
-.bio-content-container {
+.bio-content-section {
 
   &#aboutme {
     .content-section {
@@ -72,7 +72,7 @@
 
           &.about-title-post-transition {
             transform: translateY(0);
-            transition: 1s ease 1.35s;
+            transition: 1s ease 1s;
           }
 
           .line-connect-5 {
@@ -84,13 +84,11 @@
             margin-left: 0;
             margin-right: 5px;
             animation-name: increase-full;
-            opacity: 0;
             display: none;
 
             &.post-transition {
-              opacity: 1;
               display: block;
-              transition: 2s ease-out 1.5s;
+              transition: 2s ease-out 1.15s;
             }
           }
 
@@ -105,9 +103,8 @@
             display: none;
 
             &.post-transition {
-              opacity: 1;
               display: block;
-              transition: 2s ease-out 1.5s;
+              transition: 2s ease-out 1.15s;
             }
           }
 
@@ -139,7 +136,7 @@
               &.post-transition {
                 transform: translateX(0);
                 opacity: 1;
-                transition: 1s ease 0.35s;
+                transition: 1s ease;
               }
             }
 
@@ -152,7 +149,7 @@
               &.post-transition {
                 transform: translateX(0);
                 opacity: 1;
-                transition: 1s ease 0.35s;
+                transition: 1s ease;
               }
             }
 
@@ -199,33 +196,31 @@
         margin-bottom: 25px;
         opacity: 0;
         float: right;
+        transform: translateX(50px);
 
-        @media screen and (max-width: 750px) {
-          margin-left: 0;
-          margin-bottom: 50px;
-        }
-
-        @media screen and (max-width: 550px) {
-          margin-top: 0;
-          margin-bottom: 40px;
+        &.post-transition {
+          opacity: 1;
+          transform: translateX(0);
+          transition: opacity 2s ease 2.25s, transform 1s ease 2s;
         }
 
         img {
           width: 35vw;
           box-shadow: -4px 5px 5px 2px #ccc;
+        }
 
-          // @media screen and (max-width: 1400px) {
-          //   width: 30vw;
-          // }
+        @media screen and (max-width: 750px) {
+          margin-left: 0;
+          margin-bottom: 50px;
 
-          @media screen and (max-width: 750px) {
+          img {
             width: 100%;
           }
         }
 
-        &.about-photo-post-transition {
-          opacity: 1;
-          transition: opacity 2s ease 1.7s;
+        @media screen and (max-width: 550px) {
+          margin-top: 0;
+          margin-bottom: 40px;
         }
       }
 
@@ -265,7 +260,7 @@
         }
       }
 
-      &.about-content-post-transition {
+      &.post-transition {
         opacity: 1;
         transform: translateX(0);
         transition: 1s ease 2s;
@@ -274,7 +269,7 @@
   }
 }
 
-.bio-content-container {
+.bio-content-section {
 
   .content-section {
     background-color: #F4F6F8;

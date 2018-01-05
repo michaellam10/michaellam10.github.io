@@ -1,7 +1,7 @@
 $(window).on("load", function() {
   setTimeout(function() {
     transitionHeader();
-  }, 1500);
+  }, 1000);
 });
 
 const mq = window.matchMedia( "(min-width: 1280px)" );
@@ -80,9 +80,9 @@ function transitionGraphic() {
 };
 
 function transitionAboutMe() {
-  $('.section-photo').addClass('about-photo-post-transition');
+  $('.section-photo').addClass('post-transition');
   $('.section-title').addClass('about-title-post-transition');
-  $('.section-content').addClass('about-content-post-transition');
+  $('.section-content').addClass('post-transition');
   $('#about-title-left').addClass('post-transition');
   $('#about-title-right').addClass('post-transition');
 
