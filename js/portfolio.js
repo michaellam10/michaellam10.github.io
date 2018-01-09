@@ -15,6 +15,12 @@ $("li").on('click', function() {
   sortProjectID(this.id);
 });
 
+$(window).on("load", function() {
+  setTimeout(function() {
+    $('h1.typewriter-effect').addClass('active');
+  }, 1500);
+})
+
 // —————————————————————  Function Definitions  ————————————————————————————————— //
 
 var sortProjectID = function(scrollID) {

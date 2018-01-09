@@ -79,9 +79,13 @@
       border-right: .15em solid orange;
       white-space: nowrap;
       margin: 0 auto;
-      animation:
-         typing 2s steps(40, end),
-         blink-caret .75s step-end infinite;
+
+      &.active {
+        animation:
+           typing 2s steps(40, end),
+           blink-caret .75s step-end infinite;
+      }
+
 
       @keyframes typing {
         from { width: 0 }

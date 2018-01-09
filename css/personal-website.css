@@ -1748,9 +1748,10 @@ a {
       border-right: .15em solid orange;
       white-space: nowrap;
       margin: 0 auto;
-      -webkit-animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
-      animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
       /* The typewriter cursor effect */ }
+      .portfolio-feature-image .portfolio-feature-image-text-container .portfolio-feature-image-text h1.typewriter-effect.active {
+        -webkit-animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+        animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite; }
 
 @-webkit-keyframes typing {
   from {
