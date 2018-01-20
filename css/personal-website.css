@@ -1964,7 +1964,7 @@ a {
     margin: 5px;
     margin-bottom: 30px;
     height: 100%; }
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1450px) {
       #portfolio-container .project-container {
         margin-bottom: 5px; } }
     @media screen and (max-width: 750px) {
@@ -1987,7 +1987,7 @@ a {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 0; }
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1450px) {
       #portfolio-container .project-container .project-feature-image img {
         border-radius: 3px; } }
     @media screen and (max-width: 550px) {
@@ -2080,7 +2080,7 @@ a {
     color: #dddddd;
     z-index: 0;
     position: relative; }
-    @media screen and (max-width: 1400px) and (min-width: 1250px) {
+    @media screen and (max-width: 1450px) and (min-width: 1250px) {
       #portfolio-container .project-container .project-feature-description-container .project-feature-description {
         overflow-y: scroll; } }
     #portfolio-container .project-container .project-feature-description-container .project-feature-description .feature-title {
@@ -2163,7 +2163,7 @@ a {
             -o-transition: 0.2s;
             transition: 0.2s; }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) {
   #portfolio-container {
     display: -webkit-box;
     display: -ms-flexbox;
