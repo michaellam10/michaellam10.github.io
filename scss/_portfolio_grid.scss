@@ -151,7 +151,10 @@
     color: #dddddd;
     z-index: 0;
     position: relative;
-    overflow-y: scroll;
+
+    @media screen and (max-width: 1350px) {
+      overflow-y: scroll;
+    }
 
     .feature-title {
       font-family: 'CooperHewitt-Semibold', sans-serif;
