@@ -2079,8 +2079,10 @@ a {
     box-sizing: border-box;
     color: #dddddd;
     z-index: 0;
-    position: relative;
-    overflow-y: scroll; }
+    position: relative; }
+    @media screen and (max-width: 1400px) and (min-width: 1250px) {
+      #portfolio-container .project-container .project-feature-description-container .project-feature-description {
+        overflow-y: scroll; } }
     #portfolio-container .project-container .project-feature-description-container .project-feature-description .feature-title {
       font-family: 'CooperHewitt-Semibold', sans-serif;
       text-transform: uppercase;
