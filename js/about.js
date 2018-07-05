@@ -5,7 +5,7 @@ $(window).on("load", function() {
 });
 
 const mq = window.matchMedia( "(min-width: 1280px)" );
-var aboutMeContainerOffset = $('#aboutme').offset().top - 500;
+var aboutMeContainerOffset = $('#aboutme').offset().top - 700;
 var bioGraphicContainerOffset = $('#bio-graphic').offset().top - 400;
 var bioContentFeatureContainerOffset = $('#bio-content-feature').offset().top - 500;
 var bioGalleryContainerOffset = $('#gallery').offset().top - 600;
@@ -89,7 +89,7 @@ function transitionAboutMe() {
   window.setTimeout(function() {
     $('#aboutme').find('.line-connect-2').addClass('post-transition');
     $('#aboutme').find('.line-connect-5').addClass('post-transition');
-  }, 1000);
+  }, 1500);
 };
 
 function transitionGallery() {
