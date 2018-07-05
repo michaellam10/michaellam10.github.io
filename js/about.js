@@ -89,7 +89,7 @@ function transitionAboutMe() {
   window.setTimeout(function() {
     $('#aboutme').find('.line-connect-2').addClass('post-transition');
     $('#aboutme').find('.line-connect-5').addClass('post-transition');
-  }, 100);
+  }, 1000);
 };
 
 function transitionGallery() {
