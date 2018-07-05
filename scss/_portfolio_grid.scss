@@ -94,7 +94,6 @@
       position: relative;
       width: 100%;
       font-family: 'CooperHewitt-Semibold', sans-serif;
-      // text-transform: uppercase;
       letter-spacing: 3px;
       letter-spacing: 2px;
 
@@ -483,8 +482,10 @@
 
     .project-feature-image {
       .project-feature-image-title {
-        padding-top: 17px;
-        padding-bottom: 7px;
+        // padding-top: 17px;
+        // padding-bottom: 7px;
+        padding-top: 14px;
+        padding-bottom: 10px;
         padding-left: 20px;
         padding-right: 20px;
 
