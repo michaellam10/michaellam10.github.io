@@ -601,8 +601,7 @@ a {
     .social-bar {
       padding-bottom: 30px; } }
   .social-bar .social-icon {
-    padding-right: 8px;
-    padding-bottom: 8px; }
+    padding: 4px; }
     .social-bar .social-icon a .fa {
       height: 44px;
       width: 44px;
