@@ -86,10 +86,10 @@ function transitionAboutMe() {
   $('#about-title-left').addClass('post-transition');
   $('#about-title-right').addClass('post-transition');
 
-  window.setTimeout(function() {
+  // window.setTimeout(function() {
     $('#aboutme').find('.line-connect-2').addClass('post-transition');
     $('#aboutme').find('.line-connect-5').addClass('post-transition');
-  }, 1500);
+  // }, 1000);
 };
 
 function transitionGallery() {
