@@ -1787,10 +1787,10 @@ a {
   padding-right: 30px; }
   .portfolio-header p {
     text-align: center;
-    line-height: 34px;
-    font-size: 20px;
+    line-height: 50px;
+    font-size: 30px;
     font-family: 'ProximaRegular', sans-serif;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     color: #666666; }
   .portfolio-header hr {
@@ -1848,7 +1848,8 @@ a {
           font-size: 14px; } }
   @media screen and (max-width: 1250px) {
     .portfolio-header p {
-      width: 85%; }
+      width: 85%;
+      font-size: 25px; }
     .portfolio-header hr {
       width: 90%; } }
   @media screen and (max-width: 704px) {
