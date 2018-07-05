@@ -114,10 +114,10 @@
 
   p {
     text-align: center;
-    line-height: 34px;
-    font-size: 20px;
+    line-height: 45px;
+    font-size: 30px;
     font-family: 'ProximaRegular', sans-serif;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     color: #666666;
   }
@@ -196,6 +196,7 @@
   @media screen and (max-width: 1250px) {
     p {
       width: 85%;
+      font-size: 25px;
     }
 
     hr {
