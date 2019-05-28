@@ -1057,12 +1057,6 @@ a {
     flex-direction: column;
     padding-left: 25px;
     padding-right: 25px; }
-    .bio-content-section .content-section .feature-item:hover .feature-item-icon .material-icons {
-      color: #1568C2;
-      -webkit-transition: color 0.35s;
-      -o-transition: color 0.35s;
-      transition: color 0.35s;
-      cursor: default; }
     .bio-content-section .content-section .feature-item .feature-item-icon {
       margin-bottom: 10px;
       -webkit-transform: translateX(-25px);
