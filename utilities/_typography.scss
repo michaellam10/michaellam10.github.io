@@ -172,9 +172,9 @@ html{
 
 @font-face {
   font-family: 'ProximaBold';
-  src: url('../../../fonts/ProximaNova-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../../../fonts/ProximaNova-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../../../fonts/ProximaNova-Bold.svg#ProximaBold') format('svg'); /* Legacy iOS */
+  src: url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/ProximaNova/ProximaNova-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ProximaNova/ProximaNova-Bold.svg#ProximaBold') format('svg'); /* Legacy iOS */
        font-weight: normal;
        font-style: normal;
 }
