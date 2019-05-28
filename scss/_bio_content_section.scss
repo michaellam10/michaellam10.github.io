@@ -315,14 +315,6 @@
       padding-left: 25px;
       padding-right: 25px;
 
-      &:hover {
-        .feature-item-icon .material-icons {
-          color: #1568C2;
-          transition: color 0.35s;
-          cursor: default;
-        }
-      }
-
       .feature-item-icon {
         margin-bottom: 10px;
         transform: translateX(-25px);
