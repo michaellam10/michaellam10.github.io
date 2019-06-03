@@ -46,6 +46,9 @@ var sortProjectID = function(scrollID) {
     case 'scroll-dashboard':
       projectID = '#dashboard';
       break;
+    case 'scroll-onlinecourse':
+      projectID = '#onlinecourse';
+      break;
     default:
       projectID = null;
   }
