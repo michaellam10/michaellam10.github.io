@@ -49,6 +49,9 @@ var sortProjectID = function(scrollID) {
     case 'scroll-onlinecourse':
       projectID = '#onlinecourse';
       break;
+    case 'scroll-jimmymcnealmusic':
+      projectID = '#jimmymcnealmusic';
+      break;
     default:
       projectID = null;
   }
